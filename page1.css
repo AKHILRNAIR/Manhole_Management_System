@@ -1,0 +1,97 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(headerbg.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+a:hover, a:active {
+	color: red;
+}
+a.anchor:hover, a.anchor:active{
+	text-decoration: underline;
+	color: red;
+}
+a.anchor {
+	font-size: 32px;
+	color: maroon;
+}
+header a {
+	font-size: 20px;
+	margin: 42px;
+	margin-bottom: 100px;
+	line-height: 18px;
+	padding: 20px;
+}
+nav{
+	height: 50px;
+	margin-top: 0px;
+	text-align:center;
+	position: relative;
+	top: 35px;
+}
+h1 {
+	text-align: center;
+	font-size: 100px;
+	margin-bottom: 100px;
+	margin-top: 100px;
+	font-style: italic;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-variant: small-caps;
+	color: maroon;
+	padding: 0 350px 0 0px;
+}
+h2 {
+	text-align: left;
+	font-size:45px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: normal;
+	color: black;
+}
+p {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 100px;
+	color: #e7ff00;
+	width: 700px;
+	overflow: auto;
+}
+p.left {
+	position: relative;
+	left: 15%;
+	width: 700px;
+	height: 300px;
+}
+p.leftt {
+	position: relative;
+	left: 40%;
+	top: -150px;
+}
+p.right{
+	position: relative;
+	left: 15%;
+	color: #e7ff00;
+}
+p.space {
+	margin-bottom: 100px;
+}
+footer li {
+	color: white;
+	width:20%;
+	background-color:black;
+}
+img.left{
+	position: relative;
+	top: 40px;
+	padding: 0 0 0 100px;
+}
+img.right{
+	position: relative;
+	top: 20px;
+	padding: 0 80px 0 20px;
+}
