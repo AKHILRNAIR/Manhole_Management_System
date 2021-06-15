@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="logo2.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width">
+<style>
+.mySlides {display:none;}
+.backbutton {
+  width: auto;
+  padding: 4px 15px;
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div class="c2-container">
+
+</div>
+
+<div class="c2-content w3-display-container">
+
+<div class="c2-display-container mySlides">
+  <img src="1.jpeg" style="width:100%" height="680">
+</div>
+
+<div class="c2-display-container mySlides">
+  <img src="2.jpeg" style="width:100%;" height="680">
+</div>
+
+<div class="c2-display-container mySlides">
+  <img src="3.jpeg" style="width:100%" height="680">
+</div>
+
+<div class="c2-display-container mySlides">
+  <img src="4.jpeg" style="width:100%" height="680">
+</div>
+
+<div class="c2-display-container mySlides">
+  <img src="5.jpeg" style="width:100%" height="680">
+</div>
+
+<button class="c2-button c2-display-left c2-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="c2-button c2-display-right c2-black" onclick="plusDivs(1)">&#10095;</button>
+
+<button type="button" class="backbutton" onclick="myFunction()" style="float:right;">Back</button>
+</div>
+
+<script>
+  function myFunction() {
+  location.replace("index.html")
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
